@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luminara</title>
+    <style>
+    a{
+        color: #E8E1D4;
+        text-decoration: none;
+    }
+    hr{
+      border: 3px solid #E8E1D4; 
+      border-radius: 1px; 
+    }
+    .NavigationsBar{
+        cursor: pointer;
+        display: none;
+    }
+    .Navigationsbox{
+        border:2px solid #7A8F7A;
+        border-radius: 10px;
+        background-color: #7A8F7A;
+        padding: 10px;
+        font-size: 20px;
+        display: inline-block;
+        width: 20%;
+        margin: 1%;
+        text-align: center;
+    }
+    .divluftbild {
+        display: flex;
+        justify-content: center;
+        }
+
+    body {
+        background-color: #2F3E4F;
+        font-family: 'Courier New', Courier, monospace;
+        color: #E8E1D4;
+        }
+       </style>
+</head>
+<body>
+   
+    <div onmouseenter="anzeigen()" onmouseleave="nichtanzeigen()" class="NavigationsBar" id="NavigationsBarId">
+        <div class="Navigationsbox">
+            <a href="home.html">
+                <p>Home</p>
+            </a>
+        </div>
+        <div class="Navigationsbox">
+            <a href="Geschichte.html">
+                <p >Geschichte</p>
+            </a>
+        </div>
+         <div class="Navigationsbox">
+            <a href="Luminara.html">
+                <p style="font-weight: bolder; color: #2F3E4F;">Luminara</p>
+            </a>
+        </div>
+         <div class="Navigationsbox">
+            <a href="Freizeit.html">
+                <p>Freizeit</p>
+            </a>
+        </div>
+    </div> 
+    <div >          
+        <hr onmouseenter="anzeigen()" onmouseleave="nichtanzeigen()">
+    </div>
+    <script>
+    function anzeigen() {
+        const DivNavigationsBar = document.getElementById("NavigationsBarId");
+        DivNavigationsBar.style.display = "block"
+    }
+    function nichtanzeigen() {
+        const DivNavigationsBar = document.getElementById("NavigationsBarId");
+        DivNavigationsBar.style.display = "none"
+    }     
+    </script>
+</body>
+</html>
